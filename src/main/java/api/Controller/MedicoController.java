@@ -1,5 +1,6 @@
 package api.Controller;
 
+import api.doctors.dataSignUpDoctor;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -10,8 +11,8 @@ import org.springframework.web.bind.annotation.RestController;
 public class MedicoController {
 
     @PostMapping
-    public void signUp(@RequestBody String json){
-        System.out.println(json);
+    public void signUpDoctors(@RequestBody dataSignUpDoctor dataDoctors){
+        System.out.println(dataDoctors);
     }
 
 

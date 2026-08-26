@@ -1,4 +1,7 @@
 package api.patients;
 
-public record signUpPatients() {
+import api.Address.DataAddress;
+import api.doctors.Especialidade;
+
+public record signUpPatients(String nome, String email,String celular, Especialidade especialidade, DataAddress endereco) {
 }
